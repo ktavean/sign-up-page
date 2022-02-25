@@ -6,6 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 16px;
 }
 
 body {
@@ -43,4 +44,45 @@ body {
     left: var(--left-position);
     font-size: 90px;
     font-family: Norse-bold;
+}
+
+#rg-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+#body {
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+}
+
+#body form {
+    display: flex;
+}
+
+#left-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#right-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+#footer button {
+    width: 10rem;
 }
