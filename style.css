@@ -67,6 +67,16 @@ body {
     margin-bottom: 100px;
 }
 
+#header h2:nth-child(3) {
+    margin-top: 2rem;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #1F2937;
+}
+
 #content {
     margin-bottom: 50px;
     display: flex;
@@ -74,7 +84,7 @@ body {
     gap: 25px;
     padding: 1rem 0 1rem 3rem;
     background: #FFFFFF;
-    box-shadow: 1px 1px 5px 1px #bbb9b9;;
+    box-shadow: 1px 1px 5px 1px #bbb9b9;
 }
 
 #content form {
@@ -139,7 +149,12 @@ form label {
     font-weight: bold;
 }
 
+#footer button:hover {
+    cursor: pointer;
+}
+
 #footer a {
     text-decoration: none;
     color: #596D48;
+    font-weight: bold;
 }
