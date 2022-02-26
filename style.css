@@ -7,6 +7,16 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
+    font-family: Helvetica;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #1F2937;
+}
+
+#header h2 {
+    padding: 0 10rem 0 3rem;
 }
 
 body {
@@ -15,15 +25,15 @@ body {
 }
 
 #lf-content > img {
-    width: 500px;
+    width: 650px;
     height: 100vh;
 }
 
 #box {
-    --left-position: 120px;
-    position: fixed;
+    --left-position: 200px;
+    position: absolute;
     top: 210px;
-    width: 500px;
+    width: 650px;
     height: 150px;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -50,39 +60,86 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    background: #F9FAFB;
 }
 
 #header {
     margin-bottom: 100px;
 }
 
-#body {
+#content {
     margin-bottom: 50px;
     display: flex;
     flex-flow: column nowrap;
     gap: 25px;
+    padding: 1rem 0 1rem 3rem;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px 1px #bbb9b9;;
 }
 
-#body form {
+#content form {
     display: flex;
+    gap: 50px;
 }
 
-#left-form {
+#left-form, #right-form {
     display: flex;
     flex-flow: column nowrap;
+    padding-bottom: 1rem;
 }
 
-#right-form {
-    display: flex;
-    flex-flow: column nowrap;
+#left-form input, #right-form input {
+    margin-bottom: 1.5rem;
+    border: 1px solid #E5E7EB;
+    height: 28px;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue !important;
+    box-shadow: 1px 1px 5px 1px #bbb9b9;
+}
+
+form label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+
+#left-form input[class="error"], #right-form input[class="error"] {
+    border-color: rgb(196, 4, 4);
+    margin-bottom: 0px;
+}
+
+#left-form p {
+    font-size: 13px;
+    color: rgb(196, 4, 4);
 }
 
 #footer {
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
+    margin-left: 3rem;
 }
 
 #footer button {
-    width: 10rem;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;;
+    color: white;
+    background: #596D48;
+    border: 0px;
+    font-weight: bold;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #596D48;
 }
